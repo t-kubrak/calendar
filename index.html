@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <style>
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .sunrise, .sunset{
+            font-size: 3em;
+            color: coral;
+        }
+
+        div{
+            /*position: relative;*/
+            /*border: 1px solid black;*/
+        }
+
+        @media screen and (min-width: 650px) {
+            section {
+                width: 33%;
+            }
+        }
+
+        .line, .sunsetLine {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 0px;
+            z-index: 1;
+            border: 1px dashed black;
+        }
+
+        .sunsetLine{
+            top: 50%;
+        }
+
+
+
+        .start{
+            height: inherit;
+            width: 58px;
+            position: relative;
+        }
+
+        .midnightWrapper{
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .midnight{
+            background: #fff;
+        }
+
+        .description {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .description section{
+            height: 20px;
+        }
+
+        .afternoon{
+            width: 56.89px;
+        }
+
+        .placeholder{
+            width: 48px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight">12:00am</div>
+            </div>
+        </div>
+        <div class="sunrise">&#127749;</div>
+        <div class="afternoon">12:00pm</div>
+        <div class="start">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+        </div>
+    </section>
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight">12:00am</div>
+            </div>
+        </div>
+        <div class="sunrise">&#127749;</div>
+        <div class="afternoon">12:00pm</div>
+        <div class="start">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+        </div>
+    </section>
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight">12:00am</div>
+            </div>
+        </div>
+        <div class="sunrise">&#127749;</div>
+        <div class="afternoon">12:00pm</div>
+        <div class="sunset">&#127751;</div>
+    </section>
+</main>
+<div class="description">
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="afternoon">Solar</div>
+        <div class="start">
+
+            <div class="midnightWrapper">
+
+            </div>
+        </div>
+    </section>
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="afternoon"></div>
+        <div class="start">
+
+            <div class="midnightWrapper">
+
+            </div>
+        </div>
+    </section>
+</div>
+<div class="description">
+    <section class="day">
+        <div class="start">
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="afternoon"></div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+            </div>
+        </div>
+    </section>
+    <section class="day">
+        <div class="start">
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder">Lunar</div>
+        <div class="afternoon"></div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
