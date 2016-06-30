@@ -1,0 +1,84 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 200px;
+
+}
+
+.sunrise, .sunset{
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+div{
+    /*position: relative;*/
+    /*border: 1px solid black;*/
+}
+
+@media screen and (min-width: 650px) {
+    section {
+        width: 33%;
+    }
+}
+
+.line, .sunsetLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    z-index: 1;
+    border: 1px dashed black;
+}
+
+.sunsetLine{
+    top: 50%;
+}
+
+.start{
+    height: inherit;
+    width: 58px;
+    position: relative;
+}
+
+.midnightWrapper{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.midnight{
+    background: #fff;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description section{
+    height: 20px;
+}
+
+.afternoon{
+    width: 56.89px;
+}
+
+.placeholder{
+    width: 48px;
+}
+
+.day{
+    background: linear-gradient(to right, #1E164C 25%, hsla(356.9, 55.4%, 65.7%, 0.7) 40%, white 50%, white 75%, hsla(356.9, 55.4%, 65.7%, 0.7) 88%, #1E164C);
+}
