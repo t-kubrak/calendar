@@ -8,6 +8,12 @@
 <body>
 <main>
     <section class="day">
+        <div class="start" id="firstSunset">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+        </div>
         <div class="start">
             <div class="line"></div>
             <div class="midnightWrapper">
@@ -38,21 +44,19 @@
                 <div class="sunset">&#127751;</div>
             </div>
         </div>
-    </section>
-    <section class="day">
         <div class="start">
             <div class="line"></div>
             <div class="midnightWrapper">
                 <div class="midnight">12:00am</div>
             </div>
         </div>
-        <div class="sunrise">&#127749;</div>
-        <div class="afternoon">12:00pm</div>
-        <div class="sunset">&#127751;</div>
     </section>
 </main>
 <div class="description">
-    <section class="dayDescription" id="solar">
+    <section class="dayDescription solarSection">
+        <div class="start" id="firstSunset">
+            <div class="midnightWrapper"></div>
+        </div>
         <div class="start">
             <div class="line"></div>
             <div class="midnightWrapper">
@@ -62,13 +66,10 @@
         <div class="placeholder"></div>
         <div class="afternoon"><span>Solar</span></div>
         <div class="start">
-
-            <div class="midnightWrapper">
-
-            </div>
+            <div class="midnightWrapper"></div>
         </div>
     </section>
-    <section class="dayDescription">
+    <section class="dayDescription solarSection">
         <div class="start">
             <div class="line"></div>
             <div class="midnightWrapper">
@@ -76,31 +77,22 @@
             </div>
         </div>
         <div class="placeholder"></div>
-        <div class="afternoon"></div>
+        <div class="afternoon"><span>Solar</span></div>
         <div class="start">
-
-            <div class="midnightWrapper">
-
-            </div>
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper"></div>
         </div>
     </section>
 </div>
 <div class="description">
-    <section class="dayDescription">
-        <div class="start">
-            <div class="midnightWrapper">
-                <div class="midnight"></div>
-            </div>
-        </div>
-        <div class="placeholder"></div>
-        <div class="afternoon"></div>
-        <div class="start">
+    <section class="dayDescription lunarSection">
+        <div class="start" id="firstSunset">
             <div class="line"></div>
-            <div class="midnightWrapper">
-            </div>
+            <div class="midnightWrapper"></div>
         </div>
-    </section>
-    <section class="dayDescription" id="lunar">
         <div class="start">
             <div class="midnightWrapper">
                 <div class="midnight"></div>
@@ -110,6 +102,23 @@
         <div class="afternoon"></div>
         <div class="start">
             <div class="line"></div>
+            <div class="midnightWrapper">
+            </div>
+        </div>
+    </section>
+    <section class="dayDescription lunarSection">
+        <div class="start">
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"><span>Lunar</span></div>
+        <div class="afternoon"></div>
+         <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
             <div class="midnightWrapper">
             </div>
         </div>

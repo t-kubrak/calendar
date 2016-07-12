@@ -25,9 +25,14 @@ div{
     /*border: 1px solid black;*/
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 450px) {
     section {
-        width: 33%;
+        width: 50%;
+    }
+    main,.description{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
     }
 }
 
@@ -79,11 +84,19 @@ div{
     width: 48px;
 }
 
-.day{
-    background: linear-gradient(to right, #1E164C 25%, hsla(356.9, 55.4%, 65.7%, 0.7) 40%, white 50%, white 75%, hsla(356.9, 55.4%, 65.7%, 0.7) 88%, #1E164C);
+.day:first-child{
+    background: linear-gradient(to right, white 3%, hsla(356.9, 55.4%, 65.7%, 0.7) 12%, #1E164C 20%, #1E164C 44%, hsla(356.9, 55.4%, 65.7%, 0.7) 54%, white 60%, white 75%, hsla(356.9, 55.4%, 65.7%, 0.7) 90%, #1E164C);
 }
 
-#solar:hover, #lunar:hover{
+.day:nth-child(2){
+    background: linear-gradient(to right, #1E164C 20%, hsla(356.9, 55.4%, 65.7%, 0.7) 30%, white 40%, white 50%, hsla(356.9, 55.4%, 65.7%, 0.7) 70%, #1E164C 85%);
+}
+
+.solarSection:hover, .lunarSection:hover{
     cursor: pointer;
     font-size: 20px;
+}
+
+#firstSunset{
+    display: flex;
 }
