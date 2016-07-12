@@ -85,11 +85,11 @@ div{
 }
 
 .day:first-child{
-    background: linear-gradient(to right, white 3%, hsla(356.9, 55.4%, 65.7%, 0.7) 12%, #1E164C 20%, #1E164C 44%, hsla(356.9, 55.4%, 65.7%, 0.7) 54%, white 60%, white 75%, hsla(356.9, 55.4%, 65.7%, 0.7) 90%, #1E164C);
+    background: linear-gradient(to right, white 3%, #B7410E 10%, #1E164C 20%, #1E164C 44%, #B7410E 52%, white 63%, white 77%, #B7410E 90%, #1E164C);
 }
 
 .day:nth-child(2){
-    background: linear-gradient(to right, #1E164C 20%, hsla(356.9, 55.4%, 65.7%, 0.7) 30%, white 40%, white 50%, hsla(356.9, 55.4%, 65.7%, 0.7) 70%, #1E164C 85%);
+    background: linear-gradient(to right, #1E164C 20%, #B7410E 32%, white 42%, white 62%, #B7410E 69%, #1E164C 80%);
 }
 
 .solarSection:hover, .lunarSection:hover{
@@ -99,4 +99,30 @@ div{
 
 #firstSunset{
     display: flex;
+}
+
+.moon{
+    position: absolute;
+    top: 80px;
+    font-size: 25px;
+    color: #6e6e6e;
+    padding-left: 6%;
+}
+
+.legend{
+    margin-left: 20px;
+}
+
+#lastQuarterMoon, #firstQuarterMoon{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+#firstQuarterMoon{
+    position: absolute;
+    top: 10px;
+    right: 0px;
 }

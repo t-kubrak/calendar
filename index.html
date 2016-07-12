@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
 <main>
     <section class="day">
         <div class="start" id="firstSunset">
@@ -13,15 +14,19 @@
             <div class="midnightWrapper">
                 <div class="sunset">&#127751;</div>
             </div>
+            <div id="lastQuarterMoon">&#9790;</div>
         </div>
         <div class="start">
             <div class="line"></div>
             <div class="midnightWrapper">
+            
                 <div class="midnight">12:00am</div>
             </div>
         </div>
         <div class="sunrise">&#127749;</div>
-        <div class="afternoon">12:00pm</div>
+        <div class="afternoon">12:00pm
+            <div class="moon">&#127761;</div>
+        </div>
         <div class="start">
             <div class="sunsetLine"></div>
             <div class="midnightWrapper">
@@ -37,7 +42,8 @@
             </div>
         </div>
         <div class="sunrise">&#127749;</div>
-        <div class="afternoon">12:00pm</div>
+        <div class="afternoon">12:00pm
+        </div>
         <div class="start">
             <div class="sunsetLine"></div>
             <div class="midnightWrapper">
@@ -49,6 +55,7 @@
             <div class="midnightWrapper">
                 <div class="midnight">12:00am</div>
             </div>
+            <div id="firstQuarterMoon">&#9789;</div>
         </div>
     </section>
 </main>
@@ -124,6 +131,144 @@
         </div>
     </section>
 </div>
+
+<div class="legend">
+    <p>🌇 Sunset 6:50pm</p>
+    <p>🌅 Sunrise</p>
+    <p>🌑 Moon 5:01pm</p>
+</div>
+
+<main>
+    <section class="day">
+        <div class="start" id="firstSunset">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+            <div id="lastQuarterMoon">&#9790;</div>
+        </div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+            
+                <div class="midnight">12:00am</div>
+            </div>
+        </div>
+        <div class="sunrise">&#127749;</div>
+        <div class="afternoon">12:00pm
+            <div class="moon">&#127761;</div>
+        </div>
+        <div class="start">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+        </div>
+    </section>
+    <section class="day">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight">12:00am</div>
+            </div>
+        </div>
+        <div class="sunrise">&#127749;</div>
+        <div class="afternoon">12:00pm
+        </div>
+        <div class="start">
+            <div class="sunsetLine"></div>
+            <div class="midnightWrapper">
+                <div class="sunset">&#127751;</div>
+            </div>
+        </div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight">12:00am</div>
+            </div>
+            <div id="firstQuarterMoon">&#9789;</div>
+        </div>
+    </section>
+</main>
+<div class="description">
+    <section class="dayDescription solarSection">
+        <div class="start" id="firstSunset">
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="afternoon"><span>Solar</span></div>
+        <div class="start">
+            <div class="midnightWrapper"></div>
+        </div>
+    </section>
+    <section class="dayDescription solarSection">
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="afternoon"><span>Solar</span></div>
+        <div class="start">
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper"></div>
+        </div>
+    </section>
+</div>
+<div class="description">
+    <section class="dayDescription lunarSection">
+        <div class="start" id="firstSunset">
+            <div class="line"></div>
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"><span>Lunar</span></div>
+        <div class="afternoon"></div>
+        <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper">
+            </div>
+        </div>
+    </section>
+    <section class="dayDescription lunarSection">
+        <div class="start">
+            <div class="midnightWrapper">
+                <div class="midnight"></div>
+            </div>
+        </div>
+        <div class="placeholder"><span>Lunar</span></div>
+        <div class="afternoon"></div>
+         <div class="start">
+            <div class="line"></div>
+            <div class="midnightWrapper"></div>
+        </div>
+        <div class="start">
+            <div class="midnightWrapper">
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="legend">
+    <p>🌇 Sunset 6:50pm</p>
+    <p>🌅 Sunrise</p>
+    <p>🌑 Moon 9:01pm</p>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
 </body>
