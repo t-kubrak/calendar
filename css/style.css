@@ -82,6 +82,7 @@ div{
 
 .placeholder{
     width: 48px;
+    white-space: nowrap;
 }
 
 .day:first-child{
@@ -101,12 +102,20 @@ div{
     display: flex;
 }
 
-.moon{
+#moon{
     position: absolute;
-    top: 80px;
+    top: 30px;
     font-size: 25px;
     color: #6e6e6e;
-    padding-left: 6%;
+    right: 350%;
+}
+
+#moon2{
+    position: absolute;
+    top: 30px;
+    font-size: 25px;
+    color: #6e6e6e;
+    right: 140%;
 }
 
 .legend{
@@ -117,12 +126,15 @@ div{
     font-size: 25px;
     color: white;
     position: absolute;
-    top: 30px;
-    left: 15px;
+    top: 35px;
+    left: 45px;
 }
 
 #firstQuarterMoon{
     position: absolute;
     top: 10px;
-    right: 0px;
+}
+
+.legend > p > span{
+    font-size: 25px;
 }
